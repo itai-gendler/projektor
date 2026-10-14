@@ -3,11 +3,10 @@ kind: alternative
 routes:
   agent: MCP
 steps:
-- text: The AI agent, naming its live session, moves an issue to Done with a completion report whose verification is plain prose
+- text: The AI agent moves an issue to Done with a completion report whose verification is plain prose
   kind: actor
   actor: ai-agent
   entities:
-  - {entity: agent-session, effect: reads, facts: [Last heartbeat]}
   - {entity: issue, effect: reads, facts: []}
   contexts:
     agent:
@@ -50,4 +49,3 @@ The issue is done but sits in the audit queue for a person to check.
 ## Edge cases
 
 - A verification that carries a resolvable link or commit hash closes without the flag.
-- An agent that does not name its session is not flagged.
