@@ -1,0 +1,16 @@
+scenarioKinds:
+  - id: primary
+    name: Primary
+    description: The ordinary supported outcome.
+  - id: alternative
+    name: Alternative
+    description: A different supported input, route or outcome.
+  - id: validation
+    name: Validation
+    description: A refusal of who may act, or of invalid input.
+  - id: edge
+    name: Edge
+    description: A conflict, a contended resource or a lapsed precondition.
+  - id: unattended
+    name: Unattended
+    description: Behavior Projektor runs on its own schedule.
